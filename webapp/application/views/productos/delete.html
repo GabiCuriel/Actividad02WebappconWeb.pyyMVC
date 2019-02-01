@@ -1,0 +1,28 @@
+$def with(datos)
+<style>
+    .div {background-color: rosybrown; height: 230px; width: 300px;}
+    </style>
+    <div class="div">
+<a href="/productos"><h1>Delete</h1></a>
+
+<hr>
+
+<form method="POST">
+    <label for="id_p">ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" readonly="true" value="$datos.id_p" id="id_p" name="id_p">
+    <br>
+    <label for="nombre_p">Nombre: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" readonly="true" value="$datos.nombre_p" id="nombre_p" name="nombre_p">
+    <br>
+    <label for="existencias">Existencias:&nbsp;</label>
+    <input type="text" readonly="true" value="$datos.existencias" id="existencias" name="existencias">
+    <br>
+    <label for="fecha_c">Cadocidad: &nbsp;</label>
+    <input type="text" readonly="true" value="$datos.fecha_c" id="fecha_c" name="fecha_c">
+    <br>
+    <label for="precio">Precio: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" readonly="true" value="$datos.precio" id="precio" name="precio">
+    <br><br>
+    <center><button type="submit" class="btn btn-primary">Delete</button></center>
+</form>
+</div>

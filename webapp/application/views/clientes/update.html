@@ -1,0 +1,25 @@
+$def with(datos)
+<style>
+        .div{background-color: rgb(226, 87, 226); height: 250px; width: 300px; padding: 5px;}
+        </style>
+        <div class="div">
+<a href="/clientes"><h1>Update</h1></a>
+<hr>
+<form method="POST">
+        <label for="nombre_c">Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" value="$datos.nombre_c" id="nombre_c" name="nombre_c">
+        <br>
+        <label for="apepat_c">Apellido Paterno:&nbsp;&nbsp;</label>
+        <input type="text" value="$datos.apepat_c" id="apepat_c" name="apepat_c">
+        <br>
+        <label for="apemat_c">ApellidoMaterno: &nbsp;</label>
+        <input type="text" value="$datos.apemat_c" id="apemat_c" name="apemat_c">
+        <br>
+        <label for="telefono_c">Telefono: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" value="$datos.telefono_c" id="telefono_c" name="telefono_c" placeholder="Telefono">
+        <br>
+        <label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" value="$datos.email" id="email" name="email" placeholder="Email">
+        <br><br>
+    <center><button type="sunmit" class="btn btn-primary">Update</button></center>
+</form>

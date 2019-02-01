@@ -1,0 +1,29 @@
+$def with(datos)
+<style>
+    h1{font-family: Impact;}
+    .div{background-color:rgb(59, 192, 209);(241, 100, 166); width: 600px; height: 300px; padding: 8px;}
+</style>
+<div class="div">
+<h1>Registros de clientes</h1>
+<a href="/insert">Insert</a>
+
+<table>
+    <th>Nombre &nbsp;&nbsp;&nbsp;</th>
+    <th>Apellido<br>Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Apellido<br>Materno&nbsp;&nbsp;</th>
+    <th>Telefono</th>
+    <th>Email&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Delete&nbsp;&nbsp;</th>
+    <th>Update&nbsp;&nbsp;</th>
+    $for row in datos:
+    <tr>
+        <td><a href="/view/$row.nombre_c">$row.nombre_c</a></td>
+        <td><a href="/view/$row.nombre_c">$row.apepat_c</a></td>
+        <td><a href="/view/$row.nombre_c">$row.apemat_c</a></td>
+        <td><a href="/view/$row.nombre_c">$row.telefono_c</a></td>
+        <td><a href="/view/$row.nombre_c">$row.email</a></td>
+        <td><a href="/delete/$row.nombre_c">Delete</a></td>
+        <td><a href="/update/$row.nombre_c">Update</a></td>        
+    </tr>
+</table>
+</div>
